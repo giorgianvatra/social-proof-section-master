@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px; ;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.up-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+.title {
+  color: hsl(300, 43%, 22%);
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  line-height: 1.6rem;
+}
+.description {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  line-height: 1.2rem;
+  font-size: 15px;
+}
+
+.right-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: hsla(300, 43%, 22%, 0.058);
+  border-radius: 0.5rem;
+}
+
+.rating p{ 
+  color:hsl(300, 43%, 22%); 
+  font-weight: 700; ;
+}
+
+
+.profile-card {
+    display: grid;
+    background-color: hsl(300, 43%, 22%); 
+    gap: 1rem; 
+    margin: 1rem 0;
+    padding: 1.5rem; 
+    border-radius: 0.5rem; 
+}
+.profile-section {
+  display: grid;
+  grid-template-areas:
+    "one two"
+    "one three";
+    grid-template-columns: 30% 90%;
+    
+}
+.profile-section .profile {
+  grid-area: one;
+  width: 2.4rem;
+  border-radius: 2rem;
+  margin-right: 1rem; 
+}
+.name {
+  grid-area: two;
+  font-weight: 500;
+  color: white;
+}
+.position {
+  grid-area: three;
+  color: hsl(333, 80%, 67%);
+}
+.quote{ 
+  color:  hsl(300, 24%, 96%); 
+  font-weight: 500; 
+  line-height: 20px;
+  font-size: 14px;
+  
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 300  px;
+    display: grid;
+    gap: 2rem;
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.232);
+    padding: 4rem 1rem;
+  }
+  .up-section {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) { 
+    .container {
+    max-width:1440px;
+    
+    display: grid;
+    gap: 2rem;
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.232);
+    padding: 6rem 8rem;
+  }
+  .up-section {
+    text-align: left;;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  .title{ 
+    width: 400px;
+    line-height: 3rem;
+    font-size: 3rem; 
+
+  }
+  .description{
+    width: 350px;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+.right-side{ 
+  position: relative; 
+  width: 600px; 
+  
+}
+.rating{ 
+  
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  width: 450px;
+  padding: 1rem 2rem; 
+  gap: 2rem; 
+}
+.one{ 
+    position: absolute;
+    top:10%; 
+    left: 0;
+}
+.two{ 
+  position: absolute; 
+  top: 50%; 
+  left: 50%;  
+  transform: translate(-50%, -50%);
+}
+.three{ 
+position: absolute; 
+right: 0; 
+bottom: 10%;  
+}
+.down-section{
+  position: relative; 
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; 
+  
+}
+.profile-card{ 
+  width: 310px; 
+  padding: 2rem; 
+}
+.irene{ 
+  position: relative; 
+  top: 1rem; 
+}
+.anne{ 
+  position: relative; 
+  top: 2rem; 
+}
+}
